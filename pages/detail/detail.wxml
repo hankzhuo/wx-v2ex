@@ -1,0 +1,30 @@
+<view class="container">
+  <view>
+    <view class='detail item'>
+      <view class='header'>
+        <view class='title'>{{detail.title}}</view>
+        <image class='item-pic' src='{{detail.member.avatar_mini}}'/>      
+      </view>
+      <view class='auth-info'>
+        <text class='username'>By {{detail.member.username}} </text>
+        <text class='created-time'>{{detail.created}}</text>  
+      </view>
+      <view class='content'>
+        <text>{{detail.content}}</text>
+      </view>
+    </view>
+    <block wx:for="{{replies}}" wx:key="{{index}}">
+      <view class="item replies" id="{{item.id}}">
+        <image class='item-pic' src="{{item.member.avatar_mini}}"/>
+        <view class='user-info'>
+          <text class='username'>{{item.member.username}}  </text>
+          <text class='created-time'>{{item.created}}</text>
+          <text class='content'>{{item.content}} </text>         
+        </view>
+        <view><text class='floor'>{{index}}楼</text></view>
+      </view>
+    </block>
+    <view wx:if="{{replies.length === 0}}" class='no-data'>暂时没有评论</view>
+  </view>
+  <loading hidden="{{hidden}}">加载中...</loading>
+ </view>

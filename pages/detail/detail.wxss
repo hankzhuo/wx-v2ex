@@ -1,0 +1,50 @@
+.detail {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.detail .header {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+}
+
+.detail .auth-info {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 8rpx;
+}
+
+.detail .auth-info .title {
+  width: 80%;
+}
+
+.created-time {
+  font-size: 22rpx;
+  color: #ccc
+}
+
+.detail .content {
+  padding-top: 12rpx;
+  font-size: 28rpx;
+}
+
+.replies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.replies .user-info {
+  width: 80%;
+}
+
+.replies .user-info .content{
+  display: block;
+  font-size: 28rpx;
+}
+
+.replies .floor {
+  color: #ccc;
+  font-size: 22rpx;
+}
