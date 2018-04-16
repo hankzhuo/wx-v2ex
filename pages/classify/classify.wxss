@@ -3,12 +3,14 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: 28rpx;
 }
 .node-item {
   width:33.33%;
   height:130rpx;
   text-align:center;
-  border: 0.5rpx solid #ccc;
+  border: 1rpx solid;
+  border-color: rgba(0,0,0,0.2);
   box-sizing:border-box;
   display: flex;
   justify-content: center;

@@ -2,7 +2,7 @@ import { getHotestInfo } from '../../utils/api.js';
 
 Page({
   data: {
-    title: "最新话题",
+    title: "最热话题",
     latest: [],
     hidden: false
   },

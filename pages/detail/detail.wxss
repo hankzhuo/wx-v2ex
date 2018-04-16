@@ -10,41 +10,37 @@
   flex: 1;
   padding-right: 4rpx;
 }
-
 .detail .auth-info {
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 8rpx;
 }
-
 .created-time {
   font-size: 22rpx;
   color: #ccc
 }
-
 .detail .content {
   padding-top: 12rpx;
+  padding-bottom: 12rpx;
   font-size: 28rpx;
   width: 100%
 }
-
 .replies {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #e2e2e2;
+  padding-bottom:12rpx;
 }
-
 .replies .user-info {
   width: 80%;
 }
-
 .replies .user-info .content{
   display: block;
   font-size: 28rpx;
 }
-
 .replies .floor {
   color: #ccc;
   font-size: 22rpx;
+  display: inline-block;
 }

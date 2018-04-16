@@ -1,6 +1,5 @@
 import { getTopicInfo } from '../../utils/api.js';
 
-
 Page({
   data: {
     title: '分类',
@@ -32,5 +31,4 @@ Page({
   onLoad: function (options) {
     this.fetchData(options.id);
   },
-
 })
