@@ -4,7 +4,11 @@ Page({
   data: {
     title: '分类',
     nodes: [],
-    hidden: false
+    hidden: false,
+    input: '',
+    disable: false,
+    plain: false,
+    loading: false
   },
   fetchData() {
     const that = this;
@@ -20,7 +24,7 @@ Page({
       }
     })
   },
-  onLoad: function (options) {
+  onLoad(options) {
     this.fetchData();
-  },
+  }
 })

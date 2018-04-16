@@ -17,3 +17,6 @@
   align-items: center;
   padding: 5rpx;
 }
+.other-button-hover {
+  background-color: blue;
+}

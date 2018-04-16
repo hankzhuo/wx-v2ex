@@ -18,7 +18,6 @@ Page({
     wx.request({
       url: getTopicInfo({node_id: id}),
       success(res) {
-        console.log(res)
         that.setData({
           topics: res.data
         })
