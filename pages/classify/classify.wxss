@@ -1,0 +1,17 @@
+.node-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.node-item {
+  width:33.33%;
+  height:130rpx;
+  text-align:center;
+  border: 0.5rpx solid #ccc;
+  box-sizing:border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rpx;
+}

@@ -1,4 +1,4 @@
-import { getLatestTopics } from '../../utils/api.js';
+import { getHotestInfo } from '../../utils/api.js';
 
 Page({
   data: {
@@ -12,7 +12,7 @@ Page({
       hidden: false
     })
     wx.request({
-      url: getLatestTopics({page: 1}),
+      url: getHotestInfo({ page: 1 }),
       success(res) {
         that.setData({
           latest: res.data
@@ -28,7 +28,7 @@ Page({
     this.fetchData(() => (console.log()));
   },
   onPullDownRefresh() {
-    this.fetchData(function() {
+    this.fetchData(function () {
       wx.stopPullDownRefresh();
     });
   },

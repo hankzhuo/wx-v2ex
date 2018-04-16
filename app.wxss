@@ -5,9 +5,11 @@
   flex-direction: column;
   box-sizing: border-box;
   line-height: 1.2;
+  padding: 16rpx;
+  overflow-x: hidden;
 }
 .item {
-  padding: 16rpx;
+   padding: 16rpx 0; 
 }
 .item-pic {
   border-radius: 6rpx;
@@ -28,6 +30,9 @@
 }
 .no-data {
   text-align: center;
-  padding-top: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;  
   font-size: 28rpx;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 12rpx;
 }

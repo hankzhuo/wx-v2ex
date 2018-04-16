@@ -1,14 +1,17 @@
 {
   "pages":[
     "pages/latest/latest",
-    "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/hotest/hotest",
+    "pages/classify/classify",
+    "pages/detail/detail",
+    "pages/topicsDetail/topicsDetail"  
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"light", 
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#000",
@@ -20,19 +23,19 @@
         "pagePath": "pages/latest/latest",
         "text": "最新",
         "iconPath": "images/latest.png",
-        "selectedIconPath": "images/lastest_on.png"
+        "selectedIconPath": "images/latest_on.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "最热",
+        "pagePath": "pages/hotest/hotest",
+        "text": "热门",
         "iconPath": "images/hotest.png",
         "selectedIconPath": "images/hotest_on.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "节点",
-        "iconPath": "images/node.png",
-        "selectedIconPath": "images/node_on.png"
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "images/classify.png",
+        "selectedIconPath": "images/classify_on.png"
       }
     ]
   }

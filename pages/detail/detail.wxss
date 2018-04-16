@@ -1,20 +1,19 @@
-.detail {
-  border-bottom: 1px solid #e2e2e2;
-}
-
 .detail .header {
    display: flex; 
    justify-content: space-between;
    align-items: center;
 }
+.content {
+  text-align: justify;
+}
+.detail .header .title {
+  flex: 1;
+  padding-right: 4rpx;
+}
 
 .detail .auth-info {
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 8rpx;
-}
-
-.detail .auth-info .title {
-  width: 80%;
 }
 
 .created-time {
@@ -25,6 +24,7 @@
 .detail .content {
   padding-top: 12rpx;
   font-size: 28rpx;
+  width: 100%
 }
 
 .replies {
@@ -32,7 +32,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
 }
 
 .replies .user-info {

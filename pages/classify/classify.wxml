@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="node-list">
+    <block wx:for="{{nodes}}" wx:key='{{index}}'>
+      <view class="node-item">
+        <navigator url="../topicsDetail/topicsDetail?id={{item.id}}" hover-class="navigator-hover">
+          <text class="node-title">{{item.title}}</text>
+        </navigator>
+      </view>
+    </block>
+  </view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>

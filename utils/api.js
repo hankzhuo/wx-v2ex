@@ -2,10 +2,8 @@ const host_base = "https://www.v2ex.com/api/";
 
 // 所有节点
 const all_nodes = "nodes/all.json";
-// 通过节点 id 获取信息
-const node_by_id = "nodes/show.json?id=";
-// 通过节点名称获取信息
-const node_by_name = "nodes/show.json?name=";
+// 通过节点 id, name 获取信息
+const node_info = "nodes/show.json";
 
 // 主题
 const topics = "topics/show.json";
@@ -26,7 +24,7 @@ const _encodeURL = (obj) => (
 )
 
 const getAllNodes = () => ( host_base + all_nodes );
-const getNodeInfo = (obj) => (host_base + '?' + _encodeURL(obj));
+const getNodeInfo = (obj) => (host_base + node_info +'?' + _encodeURL(obj));
 const getTopicInfo = (obj) => (host_base + topics + '?' + _encodeURL(obj));
 const getLatestTopics = (obj) => (host_base + latest_topics +'?' + _encodeURL(obj));
 const getHotestInfo = (obj) => (host_base + hotest_topics +'?' + _encodeURL(obj));

@@ -1,0 +1,22 @@
+<view class="container">
+  <block wx:for="{{topics}}" wx:key="{{index}}">
+    <view class="item" id="{{item.id}}" bindtap='goToDetail'>
+      <image class='item-pic' src="{{item.member.avatar_normal}}"></image>
+      <view class='content'>
+        <text class='title'>{{item.title}} </text>
+        <view class='info'>
+          <text class='title'>{{item.node.title}}</text>
+          <text> • </text>
+          <text class='username'>{{item.member.username}}</text>
+          <text> • </text>
+          <text>最后回复来自 </text>
+          <text class='modified'>{{item.last_modified}}</text>
+        </view>
+      </view>
+      <view>
+        <text class='replies-num'>{{item.replies}}</text>
+      </view>
+    </view>
+  </block>
+  <loading hidden="{{hidden}}">加载中...</loading>
+</view>

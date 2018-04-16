@@ -14,7 +14,7 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-const transTime = function (t) {
+const transTime = (t) => {
   return new Date(t * 1000);
 }
 
