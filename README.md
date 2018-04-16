@@ -9,7 +9,7 @@
 
 ## 预览
   
-  ![]('./screenDemo.gif')
+  ![图片](./screenDemo.gif)
 
 ## 功能
 
