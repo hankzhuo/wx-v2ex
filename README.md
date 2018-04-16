@@ -8,7 +8,7 @@
 
 ## 预览
   
-  ![图片](./screenDemo.gif)
+  ![图片](./screenShow.gif)
   
 ## 功能
 
