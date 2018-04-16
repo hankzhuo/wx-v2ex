@@ -12,9 +12,7 @@
   width: 60rpx;
   height: 60rpx;
 }
-.content {
-  width: 80%;
-}
+
 .title {
   font-size: 28rpx;
 }
